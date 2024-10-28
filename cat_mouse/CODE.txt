@@ -1,0 +1,325 @@
+guns = ['aug', 'p90', 'mp5', 'mp7','uzi', 'm4a1', 'famas', 'scar-h', 'M82 Barrett 0,50', 'p250']
+
+word = input('guns name: ')
+
+if word in guns:
+    guns.remove(word)
+    print(guns)
+else:
+    print('no')
+
+
+palindrom code
+word = input('соз жаз: ')
+
+if word == word[::-1]:
+    print('palindrom')
+else:
+    print('not palindrom')
+
+
+
+code to calculate quantity
+laptops = ('caer', 'hp', ' acer', ' macbook', 'hp', 'hp', ' asus')
+
+name = input("laptom's name: ")
+
+if name in laptops:
+    print(f'количество {laptops.count(name)}')
+else:
+    print('no')
+
+
+numbers = [6, 7 ,3, -4, 9, 3]
+
+print(f'max numbres: {max(numbers)}')
+
+print(f'min numbres: {min(numbers)}')
+
+print(f'sum numbres: {sum(numbers)}')
+
+
+position code
+guns = ['aug', 'p90', 'mp5', 'mp7','uzi', 'm4a1', 'famas', 'scar-h', 'M82 Barrett 0,50', 'p250']
+
+name = input("name: ")
+
+if name in guns:
+    print(f'позиция {guns.index(name)}')
+else:
+    print('no')
+
+
+
+
+laptops = ["acer", "acer", "hp", "macbook", "hp"]
+
+new = set(laptops)
+
+length = len(new)
+
+print(f'уникальный номер товара: {length}')
+
+
+
+
+
+cars1 = ('tesla', 'honda', 'bmw', 'audi', 'mers')
+cars2 = ('audi', 'volvo', 'tesla', 'honda', 'mers')
+
+new1 = set(cars1)
+new2 = set(cars2)
+
+gun = new1.intersection(new2)
+
+print(f'number of similar cars: {len(gun)}')
+
+
+cars1 = ('tesla', 'honda', 'bmw', 'audi', 'mers')
+cars2 = ('audi', 'volvo', 'tesla', 'honda', 'mers')
+
+total = set(cars1).intersection(cars2)
+print(f'number of similar cars: {len(total)}')
+
+
+nums1 = [5, 7, 2 ,3]
+nums2 = [7, 2, 4, 8]
+
+total = set(nums1).union(nums2)
+
+tot = sorted(total, reverse=True)
+
+print(tot)
+
+
+
+text = input(": ")
+
+wordes = text.split()
+
+words = set(wordes)
+
+print(len(words))
+
+
+
+anagramma code
+word1 = input(': ')
+word2 = input(': ')
+
+if sorted(word1) == sorted(word2):
+    print('anagrama')
+
+
+
+s = lambda words: [print(i.title()) for i in words]
+s(['hp', 'asus', 'acer', 'macbook'])
+
+else:
+    print('not anagramma')
+
+
+
+
+cars = {'car_name': 'mers', 'model': 'amg', 'price': 45000, 'year': '2022'}
+
+key = input('write a key: ')
+
+if key in cars:
+    print(cars[key])
+else:
+    print('no')
+
+
+laptops = ('hp', 'macbook', 'acer', 'asus',)
+
+for n in laptops:
+    print(n.upper())
+
+
+name = input('name: ')
+
+for i in name:
+    print(i.upper())
+
+
+
+guns = ['aug', 'p90', 'mp5', 'mp7','uzi', 'm4a1', 'famas', 'scar-h', 'M82 Barrett 0,50', 'p250']
+
+for i, n in enumerate(guns):
+    print(i, n)
+
+
+
+
+new = input('word: ')
+new1 = int(input('number: '))
+
+for i in range(new1):
+    print(new)
+
+
+
+	
+while True:
+    number_one = int(input('1 san: '))
+    number_two = int(input('2 san: '))
+    znak = input('+ - * /: ')
+
+    if znak == '+':
+        print(number_one + number_two)
+    elif znak == '-':
+        print(number_one - number_two)
+    elif znak == '*':
+        print(number_one * number_two)
+    elif znak == '/':
+        print(number_one / number_two)
+    elif znak == 'q':
+        break
+    else:
+        print('ERROR')
+
+
+
+
+number = int(input(" num: "))
+
+print('start')
+
+while True:
+    print(number)
+    number -= 1
+    if number < 0:
+        break
+
+print("the end")
+
+
+total = 0
+while True:
+    n = int(input('number: '))
+    total += n
+    if n == 0:
+        print(f'summa = {total}')
+        break
+
+
+
+number = [4, 5, 4, 8, 6]
+
+total = 0
+for i in number:
+    total += i
+    
+
+print(f'summa = {total}')
+
+
+
+
+
+number = [4, 5, 4, 8, 6]
+n = 0
+
+for i in number:
+    if n < i:
+        n = i
+print(f'max = {n}')
+
+
+
+import random
+
+number_min = int(input('Томонку диапазон: '))
+number_max = int(input('Жогорку диапазон: '))
+
+secret_number = random.randint(number_min, number_max)
+
+count = 0
+while True:
+    number = int(input(f'{number_min} жана {number_max} ортосундагы санды табыныз:'))
+    count += 1
+
+    if number > secret_number:
+        print('Сиз жазган сан чон')
+    elif number < secret_number:
+        print('Сиз жазган сан кичине')
+    else:
+        print(f'Куттуктайбыз сиз {secret_number} санын {count} иретте таптыныз')
+        break
+
+
+
+
+def print_info(word, number):
+    for i in range(number):
+        print(word)
+
+
+print_info('python', 4)
+print_info('car', 2)
+print_info('acer', 1)
+
+
+
+# def three_sums(a, b, c):
+#     total = a + b + c
+#     return total
+#
+# print(three_sums(5, 6, 2))
+
+k = lambda a, b, c: a + b + c
+print(k(6, 4, 3))
+print(k(6, 4, 334543))
+
+
+
+
+# def three_sums(a, b, c):
+#     total = a + b + c
+#     return total
+#
+# print(three_sums(5, 6, 2))
+
+k = lambda a, b, c: a + b + c
+print(k(6, 4, 3))
+print(k(6, 4, 334543))
+
+
+
+# def change_numbers(numbers):
+#     for i in reversed(numbers):
+#         print(i * 10)
+#
+# change_numbers([5, 6, 3, 2, 1, 7])
+
+s = lambda nums: [print(i * 10) for i in reversed(nums)]
+s([3, 3, 5, 1])
+
+
+
+def check_number(w):
+    if w % 2 == 0:
+        return 'четное'
+    else:
+        return 'не четное'
+
+
+
+print(check_number(5))
+
+
+k = lambda word: print('четное') if word % 2 == 0 else print('не четное')
+k(10)
+
+
+
+
+#def print_objects(word):
+#    for i in enumerate(word):
+#        print(i)
+#
+#print_objects(['hp', 'asus', 'acer', 'macbook'])
+
+s = lambda words: [print(i) for i in enumerate(words)]
+s(['hp', 'asus', 'acer', 'macbook']
