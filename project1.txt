@@ -1,0 +1,41 @@
+class Shape:
+    def __init__(self, a):
+        self.a = a
+
+    def perimetr(self):
+        pass
+
+class Circle(Shape):
+    def __init__(self, a):
+        super().__init__(a)
+
+    def perimetr(self):
+        return f"{self.a * 2 *3.14}sm"
+
+
+class Rectangle(Shape):
+    def __init__(self, a, b):
+        super().__init__(a)
+        self.b = b
+
+    def perimetr(self):
+        return f"{(self.a + self.b) * 2}sm"
+
+
+
+class Triangle(Rectangle):
+    def __init__(self, a, b , c):
+        super().__init__(a, b)
+        self.c = c
+
+    def perimetr(self):
+        return f"{self.a * self.b * self.c}sm"
+
+
+
+circle1 = Circle(4)
+print(circle1.perimetr())
+rec1 = Rectangle(6, 8)
+print(rec1.perimetr())
+triangle1 = Triangle(5, 6, 2)
+print(triangle1.perimetr())

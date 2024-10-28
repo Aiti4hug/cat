@@ -1,0 +1,42 @@
+# int 654654 64564
+# float 53.345345 3543.534
+# + - * / // % ** round()
+
+# str 'gdgds' "bfdsg"
+# lower() upper() title() capitalize() len() count('o')
+# replace('y', 'a') split() join()
+
+# bool True False
+# > < == != 
+
+# list [] [534534,5345,34]
+# append() insert() remove() pop() del() clear() sort() reverse() extend() 
+# sorted() index() + max min sum len count [::-1]
+
+# tuple () (534,534,543,543)
+# sorted() index() + max min sum len count [::-1]
+
+# dict
+
+
+
+1: Python basic
+DATA TYPES (8) 
+2 = ИЗМЕН(ОЗГОРУЛОТ 3) НЕИЗМЕН(ОЗГОРУЛБОЙТ 5)
+
+ИЗМЕН(ОЗГОРУЛОТ) 3:
+list [] [654,5645,645654] append(), insert() remove() pop() del 
+dict {} {5345: 654645, "gsdg": 543, "fsdgf": 'dsfs'} [new_keys] remove() pop()
+set set() {5, 6, 3, 7, 2}  union(), add() remove() discard()
+
+НЕИЗМЕН(ОЗГОРУЛБОЙТ 5):
+int 543 -534
+float 534.534 -53.543
+str "gdgds" 'gsdgds'
+bool True False 
+tuple () (5,345435,435)
+
+
+
+for
+revresed, enume
